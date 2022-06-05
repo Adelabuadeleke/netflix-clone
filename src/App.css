@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+* {
+	margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+	background-color: #111;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media screen and (min-width: 320px) {
+	.nav {
+		max-width: 320px;
+	}
+
+	.banner__descripttion {
+		width: 25rem;
+	}
+
+	.banner__contents {
+		margin-left: 10px;
+		padding-top: 190px;
+		height: 190px;
+	}
+
+	.banner__title {
+		font-size: 1.5rem;
+		font-weight: 800;
+		padding-bottom: 0.3rem;
+	}
+
+	.banner__description {
+		line-height: 1.3;
+		padding-top: 1rem;
+		font-size: 0.8rem;
+		max-width: 360px;
+		height: 80px;
+	}
+
+	.banner {
+		height: 448px;
+	}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (min-width: 360px) {
+	.nav {
+		max-width: 360px;
+	}
 }
 
-.App-link {
-  color: #61dafb;
-}
+@media screen and (min-width: 500px) {
+	.nav {
+		max-width: 100%;
+	}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	.banner {
+		height: 448px;
+	}
+
+	.banner__descripttion {
+		width: 45rem;
+	}
+
+	.banner__contents {
+		margin-left: 30px;
+		padding-top: 190px;
+		height: 190px;
+	}
+
+	.banner__title {
+		font-size: 3rem;
+		font-weight: 800;
+		padding-bottom: 0.3rem;
+	}
+
+	.banner__description {
+		line-height: 1.3;
+		padding-top: 1rem;
+		font-size: 0.8rem;
+		max-width: 360px;
+		height: 80px;
+	}
 }
